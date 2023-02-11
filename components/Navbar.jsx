@@ -23,6 +23,10 @@ const NAV_ITEMS = [
     page: 'projects',
   },
   {
+    label: 'CP History',
+    page: 'cp_history',
+  },
+  {
     label: 'Contact',
     page: 'contact',
   },

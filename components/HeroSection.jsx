@@ -23,10 +23,10 @@ const HeroSection = () => {
           />
         </div>
         <div className='md:mt-2 md:w-3/5'>
-          <h1 className='font-bold text-4xl mt-6 md:text-7xl md:mt-0'>
+          <h1 className='font-bold text-xl mt-6 md:text-7xl md:mt-0'>
             Hi, I&#39;m Arif Khan!
           </h1>
-          <p className='text-lg mt-4 mb-6 md:text-2xl'>
+          <p className='text-lg mt-4 mb-6 md:text-xl tracking-wide'>
             I&#39;m a
             <span className='font-semibold text-teal-600'>
               {' '}
@@ -106,7 +106,8 @@ const HeroSection = () => {
           className='object-cover'
         />
         <p className='items-center justify-center flex'>
-          <strong className='text-slate-300'>Pic</strong> :{'  '}
+          <strong className='text-slate-300'>Pic : </strong>
+          {'  '}
           <span className='text-slate-500'>Last Year Git Contributon</span>{' '}
         </p>
       </div>

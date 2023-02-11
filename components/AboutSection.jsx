@@ -16,6 +16,7 @@ const AboutSection = () => {
     { skill: 'Bootstrap' },
     { skill: 'CSS' },
     { skill: 'HTML' },
+    { skill: 'Jira' },
   ];
   return (
     <section id='about'>
@@ -37,12 +38,13 @@ const AboutSection = () => {
             <br />
             <p>
               Fast-forward to today, and I’ve had the privilege of working at an
-              advertising agency, a start-up, a huge corporation, and a
-              student-led design studio. My main focus these days is building
+              Software Company, a start-up, a huge corporation, and a software
+              solution services. My main focus these days is building
               accessible, inclusive products and digital experiences at
-              Upstatement for a variety of clients. I also recently launched a
-              course that covers everything you need to build a web app with the
-              Spotify API using Node & React.
+              Upstatement for a variety of clients. I also recently shared a
+              projects code that covers everything you need to build a web app
+              with the Restfull API using Node & React & Taildwind & NextJs &
+              MongoDB.
             </p>
 
             <br />
