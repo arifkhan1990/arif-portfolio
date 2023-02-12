@@ -1,44 +1,54 @@
 'use client';
 import React, { useState } from 'react';
-
+import { sendContactForm } from '../lib/api';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-    isLoadng: false,
+    subject: 'Mail Come from Protfolio site',
   });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  console.log(formData);
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setFormData((prev) => ({
       ...prev,
-      isLoadng: true,
     }));
 
-    // try {
-    //   await sendContactForm(values);
-    //   setTouched({});
-    //   setState(initState);
-    //   toast({
-    //     title: "Message sent.",
-    //     status: "success",
-    //     duration: 2000,
-    //     position: "top",
-    //   });
-    // } catch (error) {
-    //   setState((prev) => ({
-    //     ...prev,
-    //     isLoading: false,
-    //     error: error.message,
-    //   }));
-    // }
+    try {
+      await sendContactForm(formData);
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+        subject: 'Mail Come from Protfolio site',
+      });
+      showSuccessToastMessage();
+    } catch (error) {
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+        subject: 'Mail Come from Protfolio site',
+      });
+      showErrorToastMessage();
+    }
+  };
+  const showErrorToastMessage = () => {
+    toast.error('Sorry! Send mail Unsuccessfull! !', {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+  };
+  const showSuccessToastMessage = () => {
+    toast.success('Thanks for share your opinion', {
+      position: toast.POSITION.TOP_RIGHT,
+    });
   };
   return (
     <section id='contact'>
@@ -107,6 +117,18 @@ const ContactSection = () => {
                 >
                   Get in Touch
                 </button>
+                <ToastContainer
+                  position='top-right'
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                  theme='light'
+                />
               </div>
             </div>
           </div>

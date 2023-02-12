@@ -66,7 +66,7 @@ const Navbar = () => {
             <div className='md:flex md:space-x-6 space-y-8 items-center justify-center md:space-y-0'>
               {NAV_ITEMS.map((item, idx) => {
                 return (
-                  <div key={idx} className='cursor-pointer'>
+                  <div key={idx} className='cursor-pointer font-semibold'>
                     <Link
                       activeClass='active'
                       to={item.page}
@@ -94,14 +94,14 @@ const Navbar = () => {
 
               {currentTheme === 'dark' ? (
                 <button
-                  className='bg-slate-100 p-2 rounded-xl'
+                  className='bg-slate-100 p-2 rounded-xl sm:ml-4'
                   onClick={() => setTheme('light')}
                 >
                   <RiSunLine size={25} color='black' />
                 </button>
               ) : (
                 <button
-                  className='bg-slate-100 p-2 rounded-xl'
+                  className='bg-slate-100 p-2 rounded-xl sm:ml-4'
                   onClick={() => setTheme('dark')}
                 >
                   <RiMoonFill size={25} color='black' />
