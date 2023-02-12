@@ -35,9 +35,7 @@ const PieChart = ({ textColor }) => {
       '#9a7f75',
       '#9e9e9e',
     ],
-    textStyle: {
-      color: textColor,
-    },
+    legendTextStyle: { color: textColor },
     backgroundColor: { fill: 'transparent' },
   };
   return (

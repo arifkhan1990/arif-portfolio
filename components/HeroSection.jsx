@@ -74,7 +74,7 @@ const HeroSection = () => {
             </a>
 
             <a
-              href='https://github.com/arifkhan1990'
+              href='https://www.instagram.com/arif.khan.1990/'
               rel='noreferrer'
               target='_blank'
             >
@@ -85,7 +85,7 @@ const HeroSection = () => {
             </a>
 
             <a
-              href='https://github.com/arifkhan1990'
+              href='https://twitter.com/ArifKha22566065'
               rel='noreferrer'
               target='_blank'
             >

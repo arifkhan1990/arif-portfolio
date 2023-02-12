@@ -123,8 +123,8 @@ const CPHistorySection = () => {
                           <Image
                             src={judge.image}
                             alt=''
-                            width={300}
-                            height={300}
+                            width={100}
+                            height={100}
                             className='rounded-tl-xl rounded-bl-xl sm:rounded-tl-xl shadow-xl hover:opacity-70'
                           />
                         </Link>
