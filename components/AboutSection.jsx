@@ -21,7 +21,7 @@ const AboutSection = () => {
     { skill: 'HTML' },
     { skill: 'Jira' },
     { skill: 'Data Structure' },
-    { skill: 'Algorithom' },
+    { skill: 'Algorithms' },
   ];
   return (
     <section id='about'>
