@@ -36,7 +36,7 @@ const ExperienceSection = () => {
                         <div className='text-gray'>
                           <span className='text-[16px] text-normal text-neutral-600 dark:text-neutral-400'>
                             <span aria-hidden='true'>
-                              Feb 2023 - Present · 1 mo
+                              Feb 2023 - Sep 2023 · 7 mo
                             </span>
                           </span>
                         </div>
@@ -111,7 +111,7 @@ const ExperienceSection = () => {
                 <div className='mt-2 md:w-3/4'>
                   <div className='display-flex flex-column full-width align-self-center'>
                     <div className='display-flex flex-row justify-space-between'>
-                      <a
+                      <Link
                         data-field='experience_company_logo'
                         className='optional-action-target-wrapper display-flex flex-column full-width'
                         target='_self'
@@ -130,7 +130,7 @@ const ExperienceSection = () => {
                         <div className='text-[16px] text-normal text-neutral-600 dark:text-neutral-400'>
                           <span aria-hidden='true'>Dhaka, Bangladesh</span>
                         </div>
-                      </a>
+                      </Link>
 
                       <div className='pvs-entity__action-container'></div>
                     </div>

@@ -4,8 +4,11 @@ const AboutSection = () => {
   const skills = [
     { skill: 'Javascript' },
     { skill: 'Node.js' },
+    { skill: 'Express.js' },
     { skill: 'React.js' },
+    { skill: 'Next.js' },
     { skill: 'MongoDB' },
+    { skill: 'Python' },
     { skill: 'Php' },
     { skill: 'Laravel' },
     { skill: 'JQuery' },
@@ -17,6 +20,8 @@ const AboutSection = () => {
     { skill: 'CSS' },
     { skill: 'HTML' },
     { skill: 'Jira' },
+    { skill: 'Data Structure' },
+    { skill: 'Algorithom' },
   ];
   return (
     <section id='about'>
@@ -48,15 +53,15 @@ const AboutSection = () => {
             </p>
 
             <br />
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p className='mb-3'>Here are a few technologies I’ve been working with recently:</p>
             <ul className='grid grid-rows-4 grid-flow-col gap-4 gap-[0px 10px] p-0 m-[20px 0px 0px] overflow-hidden list-none'>
-              <li>JavaScript (ES6+)</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Mongodb</li>
-              <li>Node.js</li>
-              <li>MySql</li>
-              <li>Laravel</li>
+                <li>JavaScript (ES6+)</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Mongodb</li>
+                <li>Node.js</li>
+                <li>MySql</li>
+                <li>Laravel</li>
             </ul>
           </div>
           <div className='md:w-1/2'>
@@ -68,7 +73,7 @@ const AboutSection = () => {
                 return (
                   <p
                     key={idx}
-                    className='bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold'
+                    className='bg-slate-500 text-gray-200 dark:bg-gray-200 px-4 py-2 mr-2 mt-2 dark:text-gray-500 rounded font-semibold'
                   >
                     {item.skill}
                   </p>

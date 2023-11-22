@@ -37,6 +37,20 @@ const projects = [
     ],
   },
   {
+    name: 'Ontojal social media',
+    description:
+      'This is a social media app with a online product buy and selling option.',
+    image: '/ontojalP.png',
+    github: 'https://github.com/arifNihar/practices-projects/tree/main/REACT/ontojal-media',
+    link: 'https://ontojal.vercel.app/',
+    technology: [
+      { color: 'bg-amber-900', title: 'Appwrite' },
+      { color: 'bg-teal-500', title: 'React.js' },
+      { color: 'bg-blue-500', title: 'TailwindCss' },
+      { color: 'bg-stone-700', title: 'Shadcn-ui' },
+    ],
+  },
+  {
     name: 'AI-Image Generator',
     description:
       'AI-Image Generator is a web app that generates an appreciative AI images.',
@@ -51,6 +65,20 @@ const projects = [
       { color: 'bg-blue-500', title: 'TailwindCss' },
       { color: 'bg-violet-500', title: 'Cloudinary' },
       { color: 'bg-pink-500', title: 'OpenAI' },
+    ],
+  },
+  {
+    name: 'AgamirIT Notion',
+    description:
+      'This is blog write side in real time update feature and share option avaibleable.',
+    image: '/notionP.png',
+    github: 'https://github.com/arifNihar/Nextjs-practice-project/tree/main/notion-clone',
+    link: 'https://agamir-note.vercel.app/',
+    technology: [
+      { color: 'bg-sky-900', title: 'Next.js' },
+      { color: 'bg-violet-500', title: 'Convex' },
+      { color: 'bg-blue-500', title: 'TailwindCss' },
+      { color: 'bg-fuchsia-500', title: 'Zustand' },
     ],
   },
   {

@@ -69,7 +69,7 @@ const ContactSection = () => {
                     name='name'
                     value={formData.name}
                     onChange={handleChange}
-                    className='w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+                    className='w-full bg-stone-100  dark:bg-gray-400  rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
                   />
                 </div>
               </div>
@@ -84,7 +84,7 @@ const ContactSection = () => {
                     name='email'
                     value={formData.email}
                     onChange={handleChange}
-                    className='w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+                    className='w-full bg-stone-100 dark:bg-gray-400 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
                   />
                 </div>
               </div>
@@ -98,7 +98,7 @@ const ContactSection = () => {
                     name='message'
                     value={formData.message}
                     onChange={handleChange}
-                    className='w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'
+                    className='w-full bg-stone-100 dark:bg-gray-400 rounded border dark:border-gray-400 focus:border-indigo-300 h-32 text-base outline-none text-gray-600 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'
                   ></textarea>
                 </div>
               </div>
